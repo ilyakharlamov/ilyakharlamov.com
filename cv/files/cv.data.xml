@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <employment>
+        <name>Mediaspectrum (Xentive SA)</name>
+        <where>Lausanne, Switzerland</where>
+        <from>Feb 13</from>
+        <to>present</to>
+        <description>The cloud software that enables customers to book print and online ads as well as manage conacts, contracts and customer relationships.</description>
+        <role>Lead Developer</role>
+        <contribution>Began the project</contribution>
+        <contribution>Rewrote core code central to the application leading to 100-200% speed increase in processing multi-gigabyte XML files</contribution>
+        <contribution>Envisioned, designed, implemented, performance tested and tuned data warehouse for ad-hoc OLAP analysis on streams of network security data</contribution>
+        <tools name="Languages">
+            <tool link="http://www.ecmascript.org/">JavaScript</tool>
+            <tool link="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</tool>
+            <tool link="http://www.w3.org/TR/html4">HTML</tool>
+            <tool link="http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html">Java 6</tool>
+            <tool link="http://www.python.org/">Python</tool>
+            <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</tool>
+            <tool>XSLT</tool>
+        </tools>
+        <tools name="Deploy Platforms">
+            <tool link="http://www-01.ibm.com/software/websphere">IBM Websphere</tool>
+            <tool link="http://tomcat.apache.org">Tomcat</tool>
+            <tool link="http://nginx.org">nginx</tool>
+            <tool link="http://www.redhat.com/products/enterprise-linux">Red Hat Enterprise Linux</tool>
+        </tools>
+        <tools name="Libraries">
+            <tool link="http://jquery.com/">jQuery</tool>
+            <tool link="http://cxf.apache.org">Apache CXF</tool>
+            <tool link="http://drools.jboss.org">Jboss Drools</tool>
+            <tool link="http://activemq.apache.org">ActiveMQ</tool>
+            <tool link="http://www.jython.org">Jython</tool>
+            <tool link="http://poi.apache.org/spreadsheet/index.html">POI for Excel</tool>
+            <tool link="http://linkedin.github.io/dustjs">Dust JS</tool>
+            <tool>SAP BAPI</tool>
+        </tools>
+        <tools name="Database">
+            <tool link="http://www.oracle.com/us/products/database/overview/index.html">Oracle 10g</tool>
+        </tools>
+        <tools name="Protocols">
+            <tool link="http://en.wikipedia.org/wiki/Http">HTTP</tool>,
+            <tool link="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</tool>,
+            <tool link="http://en.wikipedia.org/wiki/Json">JSON</tool>,
+            <tool link="http://en.wikipedia.org/wiki/SOAP">SOAP</tool>
+        </tools>
+        <tools name="Dev. Environment">
+            <tool link="http://www.eclipse.org/">Eclipse</tool>
+            <tool link="http://zeroturnaround.com/jrebel/">JRebel</tool>
+            <tool link="http://ant.apache.org/">Ant</tool>
+            <tool>SVN</tool>
+            <tool>Jira</tool>
+            <tool>vim</tool>
+            <tool>Mac OS X</tool>
+        </tools>
+    </employment>
+    <education link="http://www.topuniversities.com/node/9963/ranking-details/world-university-rankings/2013">Bauman Moscow Tech University<when>1997-2003</when><details>Computer-Aided Design, Masters Degree</details></education>
+    <education link="https://www.prometric.com/en-us/Pages/home.aspx">Prometric<when>2010</when><details>Sun Sertified Java 1.5 Programmer (SCJP-310-055)</details></education>
+    <!--<recommendation>
+        <from>
+            <name>Mathew</name>
+            <title>Founder and Chief Technology Officer, Foleeo Inc.</title>
+        </from>
+        Ryann has both an excellent technical perspective and the drive to fight for the common user. He has a very wide understanding of development's, web services', and online communities' concepts and finds the best way to accomplish the tasks at hand. The caliber of his work is a rarity among his field and he pulls knowledge and services from the most applicable sources while interfacing quickly, effectively, and concurrently with design, development, strategic, marketing, and executive teams.
+    </recommendation>-->
+</root>

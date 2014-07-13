@@ -1,0 +1,450 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+   	
+   
+   <head>
+      
+      <title>Ilya Kharlamov - Full Stack Web Developer Curriculum Vitae (Resume)</title>
+      	
+      <link href="./files/chrome.min.css" media="screen" rel="stylesheet" type="text/css"></link>
+      	
+      
+      <link href="./files/css.css" rel="stylesheet" type="text/css"></link>
+      
+      <!--
+                
+Here's how I write CSS, I use to put every selector in one line because reading CSS is pretty easy and having all of the selectors in one line makes it faster to see the hierarchy and find the selector I am looking for. It also saves screen space and when CSS files get big I find it extremely time saving to not have to scroll through thousands of lines of code. I understand a lot of people prefer a CSS file of a thousand lines, fair enough, can do that too if you want :)
+
+As you'll see here, I'm using some pseudo-selectors that will not work in old browsers. I purposedly don't want to support them in my CV, and I guess I've got a fair reason, anyone interested in hiring me that's using an old browser will probably won't be the type of company I am looking to work for.
+
+-->
+      
+      <link href="files/bootstrap-responsive.min.css" rel="stylesheet"></link>
+      <style type="text/css">
+
+
+	/************************************************************
+	 * Structure and General properties
+	 */
+	html {/*border-top:5px solid #049cdb;*/}
+	body {font-family: 'Noto Serif', serif;margin:0 auto;padding:0;position:relative;max-width:960px;}
+	/* I'm using the &lt;i&gt; tag for anything to do with sprites. Why? It keeps everything shorter, Twitter Bootstrap uses it and the "i" reminds me of "icon" */
+	i {/* here's the CSS sprite in base64 to avoid an extra request */background-image:url('files/sprite.png');display:inline-block;-webkit-print-color-adjust: exact;}
+		i.html {background-position:0 0;height:20px;width:21px;}
+		i.js {background-position:-22px 0;height:20px;width:21px;}
+		i.fw {background-position:-44px 0;height:20px;width:21px;}
+		i.php {background-position:-66px 0;height:20px;width:21px;}
+		i.mkt {background-position:-88px 0;height:18px;width:18px;}
+		i.non {background-position:-107px 0;height:18px;width:18px;}
+		i.pro {background-position:-126px 0;height:18px;width:18px;}
+		i.misc {background-position:-145px 0;height:18px;width:18px;}
+	div {vertical-align: top;}
+	p {word-break:hyphenate;}
+	ul {padding:0;}
+	ul&gt;li {list-style: none;}
+	abbr {border-bottom:1px dotted #b5b5b5;cursor:help;}
+
+	/************************************************************
+	 * Helpers 
+	 */
+	.hide {display:none;}
+
+	.hr {display:none;}
+
+	/************************************************************
+	 * Header 
+	 */
+	h1 {font-size: 300%;}
+	h1&gt;small {color:#08c;display: block;font-size: 50%;}
+
+	.vcard {color:#575757;position: absolute;top: 2em;right:0;line-height: 1.33em;font-size: 70%;width: 24em;}
+		.vcard&gt;p {margin:0 0 .3em;}
+		.vcard a {color:#575757;text-decoration:none;}
+		.vcard&gt;p&gt;span {text-align: right;width: 10em;}
+		.vcard&gt;p&gt;strong {float:right;}
+
+	ul a {color:#575757;text-decoration: none;border-bottom: 1px dotted #c5c5c5;}
+
+	/************************************************************
+	 * Skills section
+	 */
+	ul.skills&gt;li {display: inline-block;min-height: 7em;width: 21%;margin-left: 3.6%;vertical-align: top;position: relative;}
+	ul.skills&gt;li:nth-child(4n+4) {}
+	ul.skills&gt;li:nth-child(n+5) {font-size:90%;opacity:.9;}
+		ul.skills&gt;li&gt;h3 {margin:0;}
+			ul.skills&gt;li:nth-child(n+5)&gt;h3 {margin-top:20px;}
+		ul.skills&gt;li&gt;i {display: inline-block;position: absolute;top: 2px;left: -27px;}
+			ul.skills&gt;li:nth-child(n+5)&gt;i {top:22px;}
+		ul.skills&gt;li&gt;p {color:#575757;font-size:80%;line-height: 1.66em;margin:0 5% 0 0;}
+
+	/************************************************************
+	 * Column sections 
+	 */
+	div&gt;section {display:inline-block;margin-right:2%;vertical-align: top;width:100%;}
+		div&gt;section:last-child {margin-right:0;}
+	
+	h2 {color:#08c;border-bottom:2px dotted #b5b5b5;font-weight:100;}
+	h3 {margin-bottom: 0;}
+	h4 {color:#08c;font-weight: 200;margin-top:0;margin-bottom: .1em;}
+	h4&gt;small{color:#b5b5b5;float:right;font-weight:200;margin-top: .2em;}
+
+	ul.bigone&gt;li&gt;h3,
+	ul.bigone&gt;li&gt;h4 {letter-spacing: -.05em;}
+	ul.bigone&gt;li&gt;p {color:#575757;font-size: 80%;margin-top: .5em;}
+	ul.bigone&gt;li&gt;p.detail {color:#b5b5b5;font-size: 75%;margin-top: 0;}
+	ul.bigone&gt;li&gt;p + p.detail {margin-top: -.5em;}
+	p.detail {color:#b5b5b5;font-size: 75%;margin-top: 0;}
+
+
+
+	/************************************************************
+	 * Footer 
+	 */
+	footer {bottom: -50px;position:absolute;right:0;max-width: 40%;}
+	footer&gt;p {color:#c5c5c5;font-weight:100;line-height:1.33em;margin: 0;text-align: right;}
+	footer&gt;p.statement {font-style: italic;}
+	footer&gt;p.url {font-size: 300%;margin: 0;}
+	footer&gt;p.email {margin-top: 0;}
+	
+	p.lastupdate {color:#c5c5c5;font-size:66%;font-weight:200;position: absolute;bottom: -50px;left:0;}
+
+
+	/************************************************************
+	 * Responsive and Print queries 
+	 */
+	@media screen and (max-width:768px){
+		body {padding:0 10px;}
+		h1 {margin-top:0;}
+		h1&gt;small {font-size: 48%;}
+		.vcard {position: static;font-size: 100%;width:100%;}
+		ul.skills&gt;li {min-height:1em;width:45%;margin-left: 4.6%;}
+		div&gt;section {width:98.5%;}
+		footer {max-width: 100%;position:static;}
+	}
+	@media screen and (max-width:540px){
+		h1&gt;small {font-size:36%;}
+		.vcard {font-size:90%;width:100%;}
+		ul.skills&gt;li {margin-left:5.6%;height:auto;margin-bottom:.5em;width:100%;}
+			ul.skills&gt;li:nth-child(n+5)&gt;h3 {margin-top:0;}
+			ul.skills&gt;li:nth-child(n+5)&gt;i {top:2px;}
+	}
+
+	@media print {
+		abbr {border-bottom:none;}
+		h1 {font-size: 250%;}
+		h1&gt;small {font-size: 35%;}
+		h2 {margin-top: 0;}
+		h3 {letter-spacing: -.05em;}
+		ul.skills&gt;li {width: 20.5%;}
+		ul a {text-decoration: none;}
+		footer&gt;p.url {font-size: 200%;}
+	}
+
+	/* abbr tooltip*/
+	a.tooltip {outline:none; }
+	a.tooltip strong {line-height:30px;}
+	a.tooltip:hover {text-decoration:none;} 
+	a.tooltip span {
+		z-index:10;display:none; padding:14px 20px;
+		margin-top:-30px; margin-left:28px;
+		width:240px; line-height:16px;
+	}
+	a.tooltip:hover span{
+		display:inline; position:absolute; color:#111;
+		border:1px solid #DCA; background:#fffAF0;}
+	.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+		
+	/*CSS3 extras*/
+	a.tooltip span
+	{
+		border-radius:4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+			
+		-moz-box-shadow: 5px 5px 8px #CCC;
+		-webkit-box-shadow: 5px 5px 8px #CCC;
+		box-shadow: 5px 5px 8px #CCC;
+	}
+
+	</style>
+      </head>
+   
+   <body>
+      
+      <header>
+         		
+         <h1>Ilya Kharlamov <small>Full Stack Web Developer</small></h1>
+         	
+      </header>
+      
+      	
+      <section id="contact" class="hCard vcard">
+         		
+         <p class="fn n hide" lang="ca"><span>Name</span> <strong><span class="given-name">Ilya</span> <span class="family-name">Kharlamov</span></strong></p>
+         		
+         <p class="hide"><span>Job title</span> <strong class="title">Senior Front End Developer &amp; UI/UX Designer</strong></p>
+         		
+         <p><span>Website</span> <strong><a href="http://ilyakharlamov.com/" class="url personal">ilyakharlamov.com</a></strong></p>
+         		
+         <!-- Email is JS generated to get rid of most email spammers, I've been using it for a few years with great results -->
+         		
+         <!-- <p class="hr"><span>E-mail</span> <strong class="email"><script type="text/javascript">// <![CDATA[
+			function w(e){document.write(e);}alert(0);w('xavi');w('&#64;');w('xaviest');w('eve.c');w('om');
+			// ]]></script>xavi@xaviesteve.com</strong></p> -->
+         		
+         <!-- <p><span>Portfolio</span> <strong><a href="http://be.net/xaviesteve" class="url portfolio">be.net/xaviesteve</a></strong></p> -->
+         		
+         <p><span>References</span> <strong><a href="http://linkedin.com/in/ilyakharlamov" class="url references">linkedin.com/in/ilyakharlamov</a></strong></p>
+         		
+         <p><span>Github</span> <strong><a href="https://github.com/ilyakharlamov" class="url references">github.com/ilyakharlamov</a></strong></p>
+         		
+         <p><span>Stackoverflow</span> <strong><a href="http://stackoverflow.com/users/805325/ilya-kharlamov" class="url references">ilya-kharlamov</a></strong></p>
+         		
+         <p class="adr"><span>Address</span> <strong>
+               <!--<span class="street-address">North West</span>, <span class="postal-code">NW</span>--> <span class="locality region">Lausanne, Switzerland</span></strong></p>
+         			
+      </section>
+      
+      	
+      <section id="skills">
+         		
+         <h2>Skills</h2>
+         		
+         <ul class="skills">
+            							
+            <li>
+               					
+               <h3>HTML/CSS</h3>
+               					<i class="html"></i>
+               					
+               <p>HTML5, CSS3, LESS/SASS, <abbr title="Responsive Web Design">RWD</abbr>, animations, validation, Graceful degradation, organic SEO.
+               </p>
+               				
+            </li>
+            							
+            <li>
+               					
+               <h3>JavaScript</h3>
+               					<i class="js"></i>
+               					
+               <p><abbr title="aka Vanilla, Normal, Raw, Pure or Simple JavaScript">Native JavaScript</abbr>, jQuery, Backbone.js, Angular.js, <abbr title="Object Oriented Programming">OOP</abbr>, <abbr title="Model-View-Controller">MVC</abbr>/<abbr title="Model-View-Star (Controllers/Events are declared in the View)">MV*</abbr>, <abbr title="Warning/Error free code">JSHint</abbr>, <abbr title="Asynchronous JavaScript and XML">AJAX</abbr>, <abbr title="Functional Programming">FP</abbr>, <abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Representational State Transfer">REST</abbr>, <abbr title="Application Programming Interface">API</abbr>s, optimization.
+               </p>
+               				
+            </li>
+            				
+            <li>
+               					
+               <h3>Java</h3>
+               					<i class="mkt"></i>
+               					
+               <p>White Hat SEO, Adwords/<abbr title="Pay-Per-Click">PPC</abbr>, Social Media, Google Analytics, Content writing.
+               </p>
+               				
+            </li>
+            				
+            <li>
+               					
+               <h3>Python/Shell</h3>
+               					<i class="php"></i>
+               					
+               <p>PHP, Wordpress, Limonade, <abbr title="Fat Free PHP Framework">F3</abbr>, templating, <abbr title="Object Oriented Programming">OOP</abbr>, <abbr title="Model-View-Controller">MVC</abbr>, Apache, Security, Performance.
+               </p>
+               				
+            </li>
+            				
+            <li class="sub">
+               					
+               <h3>Design</h3>
+               					<i class="fw"></i>
+               					
+               <p>Routinely implement and iterate upon highly-polished highly-functional design prototypes in a matter of days, or sometimes
+                  hours
+               </p>
+               				
+            </li>
+            
+            				
+            <li class="sub">
+               					
+               <h3>Non-technical</h3>
+               					<i class="non"></i>
+               					
+               <p>Almost native English, basic French. Motivated and Team player. Interested in startups, technology, programming, UX, and building
+                  great web product. Love music, food, art.
+               </p>
+               				
+            </li>
+            							
+            <li class="sub">
+               					
+               <h3>Project</h3>
+               					<i class="pro"></i>
+               					
+               <p>Project planning, Understanding what the customer and the business need, Timings, Outsourcing, Delegating, <abbr title="Information Architecture">IA</abbr>, Documentation
+               </p>
+               				
+            </li>
+            							
+            <li class="sub">
+               					
+               <h3>Miscelaneous</h3>
+               					<i class="misc"></i>
+               					
+               <p><abbr title="Regular Expressions">RegExp</abbr>, XSLT, SVN, Git, Jira. Contribute to Open Source. Study and use Japanese production systems (5s, kanban, kaizen etc).
+               </p>
+               				
+            </li>
+            					
+         </ul>
+         	
+      </section>
+      
+      	
+      <div>
+         		
+         <section id="employment">
+            			
+            <h2>Employment</h2>
+            		
+         </section>
+         	
+      </div>
+      
+      	
+      <div id="mainArea">
+         <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="row">
+            <xhtml:div class="span6">
+               <xhtml:h3>Mediaspectrum (Xentive SA)</xhtml:h3>
+               <xhtml:h4>Lausanne, Switzerland
+                  <xhtml:small>Feb 13 &#8212; present</xhtml:small>
+               </xhtml:h4>
+               <xhtml:p>The cloud software that enables customers to book print and online ads as well as manage conacts, contracts and customer relationships.</xhtml:p>
+               <xhtml:dl class="dl-horizontal">
+                  <xhtml:dt>Role</xhtml:dt>
+                  <xhtml:dd>Lead Developer</xhtml:dd>
+                  <xhtml:dt>Contributions</xhtml:dt>
+                  <xhtml:dd>Began the project</xhtml:dd>
+                  <xhtml:dd>Rewrote core code central to the application leading to 100-200% speed increase in processing multi-gigabyte XML files</xhtml:dd>
+                  <xhtml:dd>Envisioned, designed, implemented, performance tested and tuned data warehouse for ad-hoc OLAP analysis on streams of network
+                     security data
+                  </xhtml:dd>
+               </xhtml:dl>
+            </xhtml:div>
+            <xhtml:div class="span4">
+               <xhtml:dl class="dl-horizontal">
+                  <xhtml:dt>Languages</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www.ecmascript.org/">JavaScript</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</xhtml:a>,
+                     <xhtml:a href="http://www.w3.org/TR/html4">HTML</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html">Java 6</xhtml:a>,
+                     <xhtml:a href="http://www.python.org/">Python</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</xhtml:a>,
+                     <xhtml:span>XSLT</xhtml:span>
+                  </xhtml:dd>
+                  <xhtml:dt>Deploy Platforms</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www-01.ibm.com/software/websphere">IBM Websphere</xhtml:a>,
+                     <xhtml:a href="http://tomcat.apache.org">Tomcat</xhtml:a>,
+                     <xhtml:a href="http://nginx.org">nginx</xhtml:a>,
+                     <xhtml:a href="http://www.redhat.com/products/enterprise-linux">Red Hat Enterprise Linux</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Libraries</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://jquery.com/">jQuery</xhtml:a>,
+                     <xhtml:a href="http://cxf.apache.org">Apache CXF</xhtml:a>,
+                     <xhtml:a href="http://drools.jboss.org">Jboss Drools</xhtml:a>,
+                     <xhtml:a href="http://activemq.apache.org">ActiveMQ</xhtml:a>,
+                     <xhtml:a href="http://www.jython.org">Jython</xhtml:a>,
+                     <xhtml:a href="http://poi.apache.org/spreadsheet/index.html">POI for Excel</xhtml:a>,
+                     <xhtml:a href="http://linkedin.github.io/dustjs">Dust JS</xhtml:a>,
+                     <xhtml:span>SAP BAPI</xhtml:span>
+                  </xhtml:dd>
+                  <xhtml:dt>Database</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www.oracle.com/us/products/database/overview/index.html">Oracle 10g</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Protocols</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Http">HTTP</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Json">JSON</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/SOAP">SOAP</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Dev. Environment</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www.eclipse.org/">Eclipse</xhtml:a>,
+                     <xhtml:a href="http://zeroturnaround.com/jrebel/">JRebel</xhtml:a>,
+                     <xhtml:a href="http://ant.apache.org/">Ant</xhtml:a>,
+                     <xhtml:span>SVN</xhtml:span>,
+                     <xhtml:span>Jira</xhtml:span>,
+                     <xhtml:span>vim</xhtml:span>,
+                     <xhtml:span>Mac OS X</xhtml:span>
+                  </xhtml:dd>
+               </xhtml:dl>
+            </xhtml:div>
+         </xhtml:div>
+         <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="row">
+            <xhtml:div id="education" class="span10">
+               <xhtml:h2>Education</xhtml:h2>
+            </xhtml:div>
+         </xhtml:div>
+         <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="row">
+            <xhtml:div class="span10">
+               <xhtml:dl>
+                  <xhtml:dt>
+                     <xhtml:a href="http://www.topuniversities.com/node/9963/ranking-details/world-university-rankings/2013">Bauman Moscow Tech University</xhtml:a>, Computer-Aided Design, Masters Degree, 1997-2003
+                  </xhtml:dt>
+                  <xhtml:dt>
+                     <xhtml:a href="https://www.prometric.com/en-us/Pages/home.aspx">Prometric</xhtml:a>, Sun Sertified Java 1.5 Programmer (SCJP-310-055), 2010
+                  </xhtml:dt>
+               </xhtml:dl>
+            </xhtml:div>
+         </xhtml:div>
+         <xhtml:h4 xmlns:xhtml="http://www.w3.org/1999/xhtml">Mathew &#8212; <span xmlns="" class="title">Founder and Chief Technology Officer, Foleeo Inc.</span></xhtml:h4>
+         <xhtml:blockquote xmlns:xhtml="http://www.w3.org/1999/xhtml">
+            <xhtml:p>&#8220;
+               
+               Ryann has both an excellent technical perspective and the drive to fight for the common user. He has a very wide understanding
+               of development's, web services', and online communities' concepts and finds the best way to accomplish the tasks at hand.
+               The caliber of his work is a rarity among his field and he pulls knowledge and services from the most applicable sources while
+               interfacing quickly, effectively, and concurrently with design, development, strategic, marketing, and executive teams.
+               &#8221;
+            </xhtml:p>
+         </xhtml:blockquote>
+      </div>
+      
+      	
+      <footer>
+         				
+         <p class="url">ilyakharlamov.com</p>
+         		
+         <p class="email hr"><script type="text/javascript">// 
+			function w(e){document.write(e);}w('ilya');w('kharlamov');w('&amp;#64;');w('gmail.c');w('om');
+			// </script>ilya.kharlamov@gmail.com</p>
+         	
+      </footer>
+      
+      	
+      <!--
+
+	This is cool, the last updated date is generated automatically through PHP, here's the code:
+	
+	echo date('jS F Y',filemtime(__FILE__));
+
+	-->
+      
+      	
+      <p class="lastupdate">Last updated: 2nd July 2014. v14.702.2126</p>
+      
+      	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      	<script type="text/javascript">
+	$(function onReady () {
+		$('abbr').click(function(e){
+			alert($(e.target).attr('title'));
+		});
+	});
+	</script>
+      	<script>console.log('Hello there! Check out the source to see some comments on my code and my work methodology :)');</script>
+      </body>
+   
+</html>
