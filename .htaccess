@@ -1,0 +1,2 @@
+DirectoryIndex index.xhtml
+Redirect 301 /index.xhtml /cv/
