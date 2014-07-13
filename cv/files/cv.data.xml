@@ -3,21 +3,29 @@
     <employment>
         <name>Mediaspectrum (Xentive SA)</name>
         <where>Lausanne, Switzerland</where>
-        <from>Feb 13</from>
+        <from>Dec 2012</from>
         <to>present</to>
         <description>The cloud software that enables customers to book print and online ads as well as manage conacts, contracts and customer relationships.</description>
         <role>Lead Developer</role>
-        <contribution>Began the project</contribution>
+        <contribution>Developed high performance, low-latency JavaScript code</contribution>
+        <contribution>Wrote a custom Java JPA library for automatic Oracle DDL management (table, index, views, functions, procedures, dblinks, constraints, sequences) that reduced manual db actions during upgrade/deployment by 95%</contribution>
         <contribution>Rewrote core code central to the application leading to 100-200% speed increase in processing multi-gigabyte XML files</contribution>
-        <contribution>Envisioned, designed, implemented, performance tested and tuned data warehouse for ad-hoc OLAP analysis on streams of network security data</contribution>
+        <contribution>Created a tool for DevOps team to automate deployment, monitoring, performance and stability of the production system in the cloud environment that greatly improved working efficiency of the DevOps</contribution>
+        <contribution>Solved key web-UI performance issues and established efficient, maintainable patterns that are now used across the project</contribution>
+        <contribution>Refactored the Business rules processing engine (Jboss Drools) to make it more reliable, scalable and faster to load</contribution>
+        <contribution>Added unit &amp; integration tests to the previously not tested code</contribution>
+        <contribution>Developed a new SQL/Reports/XSLT library that improves productivity of the report designers</contribution>
+        <contribution>Designed two customer applications from the ground up, was the main responsible contact during implementation, and lead the installations successfull to production in time.</contribution>
+        <contribution>Coordinated the work of a small group of junior developers: Provided functional and technical vision to development team, Drove technical process improvement, maintained code quality and was making better choices for the technology.</contribution>
         <tools name="Languages">
             <tool link="http://www.ecmascript.org/">JavaScript</tool>
             <tool link="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</tool>
             <tool link="http://www.w3.org/TR/html4">HTML</tool>
             <tool link="http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html">Java 6</tool>
+            <tool link="http://docs.jboss.org/drools/release/5.2.0.Final/drools-expert-docs/html/ch05.html">Jboss Business Rules Language</tool>
             <tool link="http://www.python.org/">Python</tool>
             <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</tool>
-            <tool>XSLT</tool>
+            <tool link="http://www.w3.org/TR/xslt">XSLT</tool>
         </tools>
         <tools name="Deploy Platforms">
             <tool link="http://www-01.ibm.com/software/websphere">IBM Websphere</tool>
@@ -33,10 +41,71 @@
             <tool link="http://www.jython.org">Jython</tool>
             <tool link="http://poi.apache.org/spreadsheet/index.html">POI for Excel</tool>
             <tool link="http://linkedin.github.io/dustjs">Dust JS</tool>
+            <tool link="https://code.google.com/p/mockito/">Mockito</tool>
+            <tool link="http://junit.org/">Junit</tool>
             <tool>SAP BAPI</tool>
         </tools>
         <tools name="Database">
             <tool link="http://www.oracle.com/us/products/database/overview/index.html">Oracle 10g</tool>
+        </tools>
+        <tools name="Protocols">
+            <tool link="http://en.wikipedia.org/wiki/Http">HTTP</tool>,
+            <tool link="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</tool>,
+            <tool link="http://en.wikipedia.org/wiki/Json">JSON</tool>,
+            <tool link="http://en.wikipedia.org/wiki/SOAP">SOAP</tool>
+        </tools>
+        <tools name="Tools">
+            <tool>Jira</tool>
+            <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Developer</tool>
+            <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Plus</tool>
+            <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Loader</tool>
+        </tools>
+        <tools name="Dev. Environment">
+            <tool link="http://www.eclipse.org/">Eclipse</tool>
+            <tool link="http://zeroturnaround.com/jrebel/">JRebel</tool>
+            <tool link="http://ant.apache.org/">Ant</tool>
+            <tool>SVN</tool>
+            <tool>vim</tool>
+            <tool>Mac OS X</tool>
+        </tools>
+    </employment>
+    <employment>
+        <name>Delaware Engineering Management</name>
+        <role>Front-end and back-end web developer</role>
+        <where>London, UK</where>
+        <from>Sep 2009</from>
+        <to>Dec 2012</to>
+        <description>Web-based Content Management System that is built on top of Mozilla Firefox and integrates heavily with Adobe products.</description>
+        <contribution>Redesigned existing JavaScript/Java codebase, designed a new JavaScript/Model-View-Controller framework and ported major piece of code to the new framework.</contribution>
+        <contribution>Improved the performance of JavaScript/Java code by 200-300%</contribution>
+        <contribution>Developed a PDF generation library for iPad/Android mobile applications</contribution>
+        <contribution>Developed from scratch a brand new data processing engine and Domain Specific Language compiler</contribution>
+        <contribution>Was the main responsible person for solving performance issues of the whole system: Made analysis, identified major bottlenecks. Rewrote pieces of Java code and created test-backed records. Doubled overall performance and reduced stutters to virtually nil.</contribution> 
+        <contribution>Helped the company to improve processes for development, such as source code management, continuous integration, unit tests, performance analysis, configuration testing.</contribution>
+        <contribution>Designed and implemented automated tests environment for async tests using jstestdriver, sinon.js, and mochikit.</contribution>
+        <contribution>Designed and implemented some brand new services: an xml and regexp-based text processing engine (Python), Image processing and metadata extraction engine (Python), Email import/export/interaction engine (Java, J2EE), PDF export engine (Python, Java), an archiving engine (Java), Reports module (SQL, JAVA, XML/XSL), Performance analytics reports module (SQL, JAVA, Shell), System issues analytics module (SQL, JAVA) and some others</contribution>
+        <contribution>Migrated legacy scripts into unified library set in python in order to simplify maintenance and speed up further development</contribution>
+        <contribution>At a critical time in the evolution of the company, I was able to make the installation Live in production on my own, that 1500 corporate people use online every day.</contribution>
+        <tools name="Languages">
+            <tool link="http://www.ecmascript.org/">JavaScript</tool>
+            <tool link="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</tool>
+            <tool link="http://www.w3.org/TR/html4">HTML</tool>
+            <tool link="http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html">Java 5</tool>
+            <tool link="http://www.python.org/">Python</tool>
+            <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</tool>
+            <tool link="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL">XUL</tool>
+            <tool link="http://www.w3.org/TR/xslt">XSLT</tool>
+        </tools>
+        <tools name="Deploy Platforms">
+            <tool link="http://www-01.ibm.com/software/websphere">IBM Websphere</tool>
+            <tool link="http://tomcat.apache.org">Tomcat</tool>
+        </tools>
+        <tools name="Libraries">
+            <tool link="http://jquery.com/">jQuery</tool>
+            <tool link="http://www.sencha.com/products/extjs/">ExtJS</tool>
+            <tool link="http://www.oracle.com/technetwork/java/javamail/javamail-138606.html">JavaMail</tool>
+            <tool link="http://junit.org/">Junit</tool>
+            <tool link="http://axis.apache.org/axis"></tool>
         </tools>
         <tools name="Protocols">
             <tool link="http://en.wikipedia.org/wiki/Http">HTTP</tool>,
@@ -50,9 +119,30 @@
             <tool link="http://ant.apache.org/">Ant</tool>
             <tool>SVN</tool>
             <tool>Jira</tool>
-            <tool>vim</tool>
-            <tool>Mac OS X</tool>
         </tools>
+    </employment>
+    <employment>
+        <name>Ruscode</name>
+        <where>Moscow, Russia</where>
+        <from>Sep 2007</from>
+        <to>Sep 2009</to>
+        <role>Senior QA Engineer</role>
+        <descrtiption>Worked as a lead tester on a Content Management System</descrtiption>
+        <contribution>Introduced Agile and Test Driven Development to the development process</contribution>
+        <contribution>Wrote an Automated User Acceptance Tests system for the software suite using Jython, Selenium, and Sikuli frameworks.</contribution>         
+        <contribution>Did trainings for other tester people, supported other testers. If all other testers did not find the issue, then I investigated the problem by myself. There were no situation when the issue was left not fixed.</contribution>
+        <contribution>Over 1100 bugs found and reported within 2 years</contribution>
+        <tools name="Protocols">
+            <tool link="http://en.wikipedia.org/wiki/Http">HTTP</tool>,
+            <tool link="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</tool>,
+            <tool link="http://en.wikipedia.org/wiki/Json">JSON</tool>,
+            <tool link="http://en.wikipedia.org/wiki/SOAP">SOAP</tool>
+        </tools>
+        <tools name="Tools">
+            <tool>Jira</tool>
+            <tool link="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Developer</tool>
+            <tool link="http://www.soapui.org/">SOAP UI</tool>
+        </tools>    
     </employment>
     <education link="http://www.topuniversities.com/node/9963/ranking-details/world-university-rankings/2013">Bauman Moscow Tech University<when>1997-2003</when><details>Computer-Aided Design, Masters Degree</details></education>
     <education link="https://www.prometric.com/en-us/Pages/home.aspx">Prometric<when>2010</when><details>Sun Sertified Java 1.5 Programmer (SCJP-310-055)</details></education>

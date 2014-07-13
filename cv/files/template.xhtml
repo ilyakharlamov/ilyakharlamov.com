@@ -4,6 +4,7 @@
 	
     <head>
         <title>Ilya Kharlamov - Full Stack Web Developer Curriculum Vitae (Resume)</title>
+    	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     	<link href="./files/chrome.min.css" media="screen" rel="stylesheet" type="text/css"></link>
 	
         <link href="./files/css.css" rel="stylesheet" type="text/css"/>
@@ -198,15 +199,11 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
 		<p class="fn n hide" lang="ca"><span>Name</span> <strong><span class="given-name">Ilya</span> <span class="family-name">Kharlamov</span></strong></p>
 		<p class="hide"><span>Job title</span> <strong class="title">Senior Front End Developer &amp; UI/UX Designer</strong></p>
 		<p><span>Website</span> <strong><a href="http://ilyakharlamov.com/" class="url personal">ilyakharlamov.com</a></strong></p>
-		<!-- Email is JS generated to get rid of most email spammers, I've been using it for a few years with great results -->
-		<!-- <p class="hr"><span>E-mail</span> <strong class="email"><script type="text/javascript">// <![CDATA[
-			function w(e){document.write(e);}alert(0);w('xavi');w('&#64;');w('xaviest');w('eve.c');w('om');
-			// ]]></script>xavi@xaviesteve.com</strong></p> -->
-		<!-- <p><span>Portfolio</span> <strong><a href="http://be.net/xaviesteve" class="url portfolio">be.net/xaviesteve</a></strong></p> -->
+		<p><span>E-mail</span> <strong><a id="email"></a></strong><script>$(function(){var a='ilya.'+'kharlamov'+'@'+'gmail.'+'com';$('#email').attr('href','mailto:'+a).text(a);})</script></p>
 		<p><span>References</span> <strong><a href="http://linkedin.com/in/ilyakharlamov" class="url references">linkedin.com/in/ilyakharlamov</a></strong></p>
 		<p><span>Github</span> <strong><a href="https://github.com/ilyakharlamov" class="url references">github.com/ilyakharlamov</a></strong></p>
 		<p><span>Stackoverflow</span> <strong><a href="http://stackoverflow.com/users/805325/ilya-kharlamov" class="url references">ilya-kharlamov</a></strong></p>
-		<p class="adr"><span>Address</span> <strong><!--<span class="street-address">North West</span>, <span class="postal-code">NW</span>--> <span class="locality region">Lausanne, Switzerland</span></strong></p>
+		<p class="adr"><span>Address</span><strong><span class="locality region">Lausanne, Switzerland</span></strong></p>
 			</section>
 
 	<section id="skills">
@@ -215,7 +212,7 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
 							<li>
 					<h3>HTML/CSS</h3>
 					<i class="html"></i>
-					<p>HTML5, CSS3, LESS/SASS, <abbr title="Responsive Web Design">RWD</abbr>, animations, validation, Graceful degradation, organic SEO.</p>
+					<p>HTML5, CSS3, LESS/SASS, <abbr title="Responsive Web Design">RWD</abbr>, animations, Graceful degradation, performance</p>
 				</li>
 							<li>
 					<h3>JavaScript</h3>
@@ -225,33 +222,33 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
 				<li>
 					<h3>Java</h3>
 					<i class="mkt"></i>
-					<p>White Hat SEO, Adwords/<abbr title="Pay-Per-Click">PPC</abbr>, Social Media, Google Analytics, Content writing.</p>
+					<p>Java <abbr title="Standard Edition">SE</abbr>, <abbr title="Enterprise Edition">EE</abbr>, hotspot in-memory performance tuning: vtune, aprof, solaris studio perf analizer, hsdis, Java GC tuning and adopt code for GC
+					</p>
 				</li>
-				<li>
+				<li >
+					<h3>Cloud/Distributed</h3>
+					<i class="fw"></i>
+					<p>Sharding, <abbr title="Brewer's theorem: Consistency, Availability, Partition tolerance">CAP</abbr>, high availability, horizontal scaling, front end performance, back end performance, nosql: CassandraDB, MongoDB</p>
+				</li>
+			    <li class="sub">
 					<h3>Python/Shell</h3>
 					<i class="php"></i>
-					<p>PHP, Wordpress, Limonade, <abbr title="Fat Free PHP Framework">F3</abbr>, templating, <abbr title="Object Oriented Programming">OOP</abbr>, <abbr title="Model-View-Controller">MVC</abbr>, Apache, Security, Performance.</p>
+			    	<p>Automate routines, highly-functional design prototypes in a matter of days, or sometimes hours</p>
 				</li>
 				<li class="sub">
-					<h3>Design</h3>
-					<i class="fw"></i>
-					<p>Routinely implement and iterate upon highly-polished highly-functional design prototypes in a matter of days, or sometimes hours</p>
-				</li>
-
-				<li class="sub">
-					<h3>Non-technical</h3>
-					<i class="non"></i>
-					<p>Almost native English, basic French. Motivated and Team player. Interested in startups, technology, programming, UX, and building great web product. Love music, food, art.</p>
-				</li>
-							<li class="sub">
 					<h3>Project</h3>
 					<i class="pro"></i>
 					<p>Project planning, Understanding what the customer and the business need, Timings, Outsourcing, Delegating, <abbr title="Information Architecture">IA</abbr>, Documentation</p>
 				</li>
-							<li class="sub">
+				<li class="sub">
 					<h3>Miscelaneous</h3>
 					<i class="misc"></i>
-					<p><abbr title="Regular Expressions">RegExp</abbr>, XSLT, SVN, Git, Jira. Contribute to Open Source. Study and use Japanese production systems (5s, kanban, kaizen etc).</p>
+					<p><abbr title="Regular Expressions">RegExp</abbr>, XSLT, SVN, Git, Jira. Contribute to Open Source. Refactoring, optimize data structures, algorithms, data exchange, etc</p>
+				</li>
+				<li class="sub">
+					<h3>Non-technical</h3>
+					<i class="non"></i>
+					<p>Almost native English, basic French. Motivated and Team player. Interested in startups, technology, programming, UX, and building great web product. Study and use Japanese production systems (5s, kanban, kaizen etc).</p>
 				</li>
 					</ul>
 	</section>
@@ -340,9 +337,6 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
 
 	<footer>
 				<p class="url">ilyakharlamov.com</p>
-		<p class="email hr"><script type="text/javascript">// <![CDATA[
-			function w(e){document.write(e);}w('ilya');w('kharlamov');w('&#64;');w('gmail.c');w('om');
-			// ]]></script>ilya.kharlamov@gmail.com</p>
 	</footer>
 
 	<!--
@@ -355,7 +349,6 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
 
 	<p class="lastupdate">Last updated: 2nd July 2014. v14.702.2126</p>
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript">
 	$(function onReady () {
 		$('abbr').click(function(e){

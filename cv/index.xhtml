@@ -4,8 +4,8 @@
    <head>
       
       <title>Ilya Kharlamov - Full Stack Web Developer Curriculum Vitae (Resume)</title>
-      	
-      <link href="./files/chrome.min.css" media="screen" rel="stylesheet" type="text/css"></link>
+      	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      	<link href="./files/chrome.min.css" media="screen" rel="stylesheet" type="text/css"></link>
       	
       
       <link href="./files/css.css" rel="stylesheet" type="text/css"></link>
@@ -165,6 +165,32 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
 		box-shadow: 5px 5px 8px #CCC;
 	}
 
+	html body blockquote {
+		background-color: rgb(243, 243, 243);
+		border-left-color: rgb(102, 102, 102);
+		border-left-style: solid;
+		border-left-width: 4px;
+		color: rgb(102, 102, 102);
+		display: block;
+		font-family: 'Book Antiqua', Cambria, Georgia, serif;
+		font-size: 16px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		height: 160px;
+		line-height: 24px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		width: 644px;
+		zoom: 1;
+	}
+
 	</style>
       </head>
    
@@ -185,13 +211,7 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
          		
          <p><span>Website</span> <strong><a href="http://ilyakharlamov.com/" class="url personal">ilyakharlamov.com</a></strong></p>
          		
-         <!-- Email is JS generated to get rid of most email spammers, I've been using it for a few years with great results -->
-         		
-         <!-- <p class="hr"><span>E-mail</span> <strong class="email"><script type="text/javascript">// <![CDATA[
-			function w(e){document.write(e);}alert(0);w('xavi');w('&#64;');w('xaviest');w('eve.c');w('om');
-			// ]]></script>xavi@xaviesteve.com</strong></p> -->
-         		
-         <!-- <p><span>Portfolio</span> <strong><a href="http://be.net/xaviesteve" class="url portfolio">be.net/xaviesteve</a></strong></p> -->
+         <p><span>E-mail</span> <strong><a id="email"></a></strong><script>$(function(){var a='ilya.'+'kharlamov'+'@'+'gmail.'+'com';$('#email').attr('href','mailto:'+a).text(a);})</script></p>
          		
          <p><span>References</span> <strong><a href="http://linkedin.com/in/ilyakharlamov" class="url references">linkedin.com/in/ilyakharlamov</a></strong></p>
          		
@@ -199,8 +219,7 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
          		
          <p><span>Stackoverflow</span> <strong><a href="http://stackoverflow.com/users/805325/ilya-kharlamov" class="url references">ilya-kharlamov</a></strong></p>
          		
-         <p class="adr"><span>Address</span> <strong>
-               <!--<span class="street-address">North West</span>, <span class="postal-code">NW</span>--> <span class="locality region">Lausanne, Switzerland</span></strong></p>
+         <p class="adr"><span>Address</span><strong><span class="locality region">Lausanne, Switzerland</span></strong></p>
          			
       </section>
       
@@ -216,7 +235,7 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                <h3>HTML/CSS</h3>
                					<i class="html"></i>
                					
-               <p>HTML5, CSS3, LESS/SASS, <abbr title="Responsive Web Design">RWD</abbr>, animations, validation, Graceful degradation, organic SEO.
+               <p>HTML5, CSS3, LESS/SASS, <abbr title="Responsive Web Design">RWD</abbr>, animations, Graceful degradation, performance
                </p>
                				
             </li>
@@ -236,44 +255,32 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                <h3>Java</h3>
                					<i class="mkt"></i>
                					
-               <p>White Hat SEO, Adwords/<abbr title="Pay-Per-Click">PPC</abbr>, Social Media, Google Analytics, Content writing.
+               <p>Java <abbr title="Standard Edition">SE</abbr>, <abbr title="Enterprise Edition">EE</abbr>, hotspot in-memory performance tuning: vtune, aprof, solaris studio perf analizer, hsdis, Java GC tuning and adopt code for
+                  GC
+                  					
                </p>
                				
             </li>
             				
             <li>
                					
-               <h3>Python/Shell</h3>
-               					<i class="php"></i>
-               					
-               <p>PHP, Wordpress, Limonade, <abbr title="Fat Free PHP Framework">F3</abbr>, templating, <abbr title="Object Oriented Programming">OOP</abbr>, <abbr title="Model-View-Controller">MVC</abbr>, Apache, Security, Performance.
-               </p>
-               				
-            </li>
-            				
-            <li class="sub">
-               					
-               <h3>Design</h3>
+               <h3>Cloud/Distributed</h3>
                					<i class="fw"></i>
                					
-               <p>Routinely implement and iterate upon highly-polished highly-functional design prototypes in a matter of days, or sometimes
-                  hours
+               <p>Sharding, <abbr title="Brewer's theorem: Consistency, Availability, Partition tolerance">CAP</abbr>, high availability, horizontal scaling, front end performance, back end performance, nosql: CassandraDB, MongoDB
                </p>
                				
             </li>
-            
-            				
+            			    
             <li class="sub">
                					
-               <h3>Non-technical</h3>
-               					<i class="non"></i>
-               					
-               <p>Almost native English, basic French. Motivated and Team player. Interested in startups, technology, programming, UX, and building
-                  great web product. Love music, food, art.
-               </p>
+               <h3>Python/Shell</h3>
+               					<i class="php"></i>
+               			    	
+               <p>Automate routines, highly-functional design prototypes in a matter of days, or sometimes hours</p>
                				
             </li>
-            							
+            				
             <li class="sub">
                					
                <h3>Project</h3>
@@ -283,13 +290,24 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                </p>
                				
             </li>
-            							
+            				
             <li class="sub">
                					
                <h3>Miscelaneous</h3>
                					<i class="misc"></i>
                					
-               <p><abbr title="Regular Expressions">RegExp</abbr>, XSLT, SVN, Git, Jira. Contribute to Open Source. Study and use Japanese production systems (5s, kanban, kaizen etc).
+               <p><abbr title="Regular Expressions">RegExp</abbr>, XSLT, SVN, Git, Jira. Contribute to Open Source. Refactoring, optimize data structures, algorithms, data exchange, etc
+               </p>
+               				
+            </li>
+            				
+            <li class="sub">
+               					
+               <h3>Non-technical</h3>
+               					<i class="non"></i>
+               					
+               <p>Almost native English, basic French. Motivated and Team player. Interested in startups, technology, programming, UX, and building
+                  great web product. Study and use Japanese production systems (5s, kanban, kaizen etc).
                </p>
                				
             </li>
@@ -315,17 +333,30 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
             <xhtml:div class="span6">
                <xhtml:h3>Mediaspectrum (Xentive SA)</xhtml:h3>
                <xhtml:h4>Lausanne, Switzerland
-                  <xhtml:small>Feb 13 &#8212; present</xhtml:small>
+                  <xhtml:small>Dec 2012 &#8212; present</xhtml:small>
                </xhtml:h4>
                <xhtml:p>The cloud software that enables customers to book print and online ads as well as manage conacts, contracts and customer relationships.</xhtml:p>
                <xhtml:dl class="dl-horizontal">
                   <xhtml:dt>Role</xhtml:dt>
                   <xhtml:dd>Lead Developer</xhtml:dd>
                   <xhtml:dt>Contributions</xhtml:dt>
-                  <xhtml:dd>Began the project</xhtml:dd>
+                  <xhtml:dd>Developed high performance, low-latency JavaScript code</xhtml:dd>
+                  <xhtml:dd>Wrote a custom Java JPA library for automatic Oracle DDL management (table, index, views, functions, procedures, dblinks,
+                     constraints, sequences) that reduced manual db actions during upgrade/deployment by 95%
+                  </xhtml:dd>
                   <xhtml:dd>Rewrote core code central to the application leading to 100-200% speed increase in processing multi-gigabyte XML files</xhtml:dd>
-                  <xhtml:dd>Envisioned, designed, implemented, performance tested and tuned data warehouse for ad-hoc OLAP analysis on streams of network
-                     security data
+                  <xhtml:dd>Created a tool for DevOps team to automate deployment, monitoring, performance and stability of the production system in the
+                     cloud environment that greatly improved working efficiency of the DevOps
+                  </xhtml:dd>
+                  <xhtml:dd>Solved key web-UI performance issues and established efficient, maintainable patterns that are now used across the project</xhtml:dd>
+                  <xhtml:dd>Refactored the Business rules processing engine (Jboss Drools) to make it more reliable, scalable and faster to load</xhtml:dd>
+                  <xhtml:dd>Added unit &amp; integration tests to the previously not tested code</xhtml:dd>
+                  <xhtml:dd>Developed a new SQL/Reports/XSLT library that improves productivity of the report designers</xhtml:dd>
+                  <xhtml:dd>Designed two customer applications from the ground up, was the main responsible contact during implementation, and lead the
+                     installations successfull to production in time.
+                  </xhtml:dd>
+                  <xhtml:dd>Coordinated the work of a small group of junior developers: Provided functional and technical vision to development team,
+                     Drove technical process improvement, maintained code quality and was making better choices for the technology.
                   </xhtml:dd>
                </xhtml:dl>
             </xhtml:div>
@@ -337,9 +368,10 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                      <xhtml:a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</xhtml:a>,
                      <xhtml:a href="http://www.w3.org/TR/html4">HTML</xhtml:a>,
                      <xhtml:a href="http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html">Java 6</xhtml:a>,
+                     <xhtml:a href="http://docs.jboss.org/drools/release/5.2.0.Final/drools-expert-docs/html/ch05.html">Jboss Business Rules Language</xhtml:a>,
                      <xhtml:a href="http://www.python.org/">Python</xhtml:a>,
                      <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</xhtml:a>,
-                     <xhtml:span>XSLT</xhtml:span>
+                     <xhtml:a href="http://www.w3.org/TR/xslt">XSLT</xhtml:a>
                   </xhtml:dd>
                   <xhtml:dt>Deploy Platforms</xhtml:dt>
                   <xhtml:dd>
@@ -357,11 +389,101 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                      <xhtml:a href="http://www.jython.org">Jython</xhtml:a>,
                      <xhtml:a href="http://poi.apache.org/spreadsheet/index.html">POI for Excel</xhtml:a>,
                      <xhtml:a href="http://linkedin.github.io/dustjs">Dust JS</xhtml:a>,
+                     <xhtml:a href="https://code.google.com/p/mockito/">Mockito</xhtml:a>,
+                     <xhtml:a href="http://junit.org/">Junit</xhtml:a>,
                      <xhtml:span>SAP BAPI</xhtml:span>
                   </xhtml:dd>
                   <xhtml:dt>Database</xhtml:dt>
                   <xhtml:dd>
                      <xhtml:a href="http://www.oracle.com/us/products/database/overview/index.html">Oracle 10g</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Protocols</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Http">HTTP</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Json">JSON</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/SOAP">SOAP</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Tools</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:span>Jira</xhtml:span>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Developer</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Plus</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Loader</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Dev. Environment</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www.eclipse.org/">Eclipse</xhtml:a>,
+                     <xhtml:a href="http://zeroturnaround.com/jrebel/">JRebel</xhtml:a>,
+                     <xhtml:a href="http://ant.apache.org/">Ant</xhtml:a>,
+                     <xhtml:span>SVN</xhtml:span>,
+                     <xhtml:span>vim</xhtml:span>,
+                     <xhtml:span>Mac OS X</xhtml:span>
+                  </xhtml:dd>
+               </xhtml:dl>
+            </xhtml:div>
+         </xhtml:div>
+         <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="row">
+            <xhtml:div class="span6">
+               <xhtml:h3>Delaware Engineering Management</xhtml:h3>
+               <xhtml:h4>London, UK
+                  <xhtml:small>Sep 2009 &#8212; Dec 2012</xhtml:small>
+               </xhtml:h4>
+               <xhtml:p>Web-based Content Management System that is built on top of Mozilla Firefox and integrates heavily with Adobe products.</xhtml:p>
+               <xhtml:dl class="dl-horizontal">
+                  <xhtml:dt>Role</xhtml:dt>
+                  <xhtml:dd>Front-end and back-end web developer</xhtml:dd>
+                  <xhtml:dt>Contributions</xhtml:dt>
+                  <xhtml:dd>Redesigned existing JavaScript/Java codebase, designed a new JavaScript/Model-View-Controller framework and ported major piece
+                     of code to the new framework.
+                  </xhtml:dd>
+                  <xhtml:dd>Improved the performance of JavaScript/Java code by 200-300%</xhtml:dd>
+                  <xhtml:dd>Developed a PDF generation library for iPad/Android mobile applications</xhtml:dd>
+                  <xhtml:dd>Developed from scratch a brand new data processing engine and Domain Specific Language compiler</xhtml:dd>
+                  <xhtml:dd>Was the main responsible person for solving performance issues of the whole system: Made analysis, identified major bottlenecks.
+                     Rewrote pieces of Java code and created test-backed records. Doubled overall performance and reduced stutters to virtually
+                     nil.
+                  </xhtml:dd>
+                  <xhtml:dd>Helped the company to improve processes for development, such as source code management, continuous integration, unit tests,
+                     performance analysis, configuration testing.
+                  </xhtml:dd>
+                  <xhtml:dd>Designed and implemented automated tests environment for async tests using jstestdriver, sinon.js, and mochikit.</xhtml:dd>
+                  <xhtml:dd>Designed and implemented some brand new services: an xml and regexp-based text processing engine (Python), Image processing
+                     and metadata extraction engine (Python), Email import/export/interaction engine (Java, J2EE), PDF export engine (Python, Java),
+                     an archiving engine (Java), Reports module (SQL, JAVA, XML/XSL), Performance analytics reports module (SQL, JAVA, Shell),
+                     System issues analytics module (SQL, JAVA) and some others
+                  </xhtml:dd>
+                  <xhtml:dd>Migrated legacy scripts into unified library set in python in order to simplify maintenance and speed up further development</xhtml:dd>
+                  <xhtml:dd>At a critical time in the evolution of the company, I was able to make the installation Live in production on my own, that
+                     1500 corporate people use online every day.
+                  </xhtml:dd>
+               </xhtml:dl>
+            </xhtml:div>
+            <xhtml:div class="span4">
+               <xhtml:dl class="dl-horizontal">
+                  <xhtml:dt>Languages</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www.ecmascript.org/">JavaScript</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</xhtml:a>,
+                     <xhtml:a href="http://www.w3.org/TR/html4">HTML</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/java/javase/overview/index-jsp-136246.html">Java 5</xhtml:a>,
+                     <xhtml:a href="http://www.python.org/">Python</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">PL/SQL</xhtml:a>,
+                     <xhtml:a href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL">XUL</xhtml:a>,
+                     <xhtml:a href="http://www.w3.org/TR/xslt">XSLT</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Deploy Platforms</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://www-01.ibm.com/software/websphere">IBM Websphere</xhtml:a>,
+                     <xhtml:a href="http://tomcat.apache.org">Tomcat</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Libraries</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://jquery.com/">jQuery</xhtml:a>,
+                     <xhtml:a href="http://www.sencha.com/products/extjs/">ExtJS</xhtml:a>,
+                     <xhtml:a href="http://www.oracle.com/technetwork/java/javamail/javamail-138606.html">JavaMail</xhtml:a>,
+                     <xhtml:a href="http://junit.org/">Junit</xhtml:a>,
+                     <xhtml:a href="http://axis.apache.org/axis"></xhtml:a>
                   </xhtml:dd>
                   <xhtml:dt>Protocols</xhtml:dt>
                   <xhtml:dd>
@@ -376,9 +498,44 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                      <xhtml:a href="http://zeroturnaround.com/jrebel/">JRebel</xhtml:a>,
                      <xhtml:a href="http://ant.apache.org/">Ant</xhtml:a>,
                      <xhtml:span>SVN</xhtml:span>,
+                     <xhtml:span>Jira</xhtml:span>
+                  </xhtml:dd>
+               </xhtml:dl>
+            </xhtml:div>
+         </xhtml:div>
+         <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="row">
+            <xhtml:div class="span6">
+               <xhtml:h3>Ruscode</xhtml:h3>
+               <xhtml:h4>Moscow, Russia
+                  <xhtml:small>Sep 2007 &#8212; Sep 2009</xhtml:small>
+               </xhtml:h4>
+               <xhtml:p></xhtml:p>
+               <xhtml:dl class="dl-horizontal">
+                  <xhtml:dt>Role</xhtml:dt>
+                  <xhtml:dd>Senior QA Engineer</xhtml:dd>
+                  <xhtml:dt>Contributions</xhtml:dt>
+                  <xhtml:dd>Introduced Agile and Test Driven Development to the development process</xhtml:dd>
+                  <xhtml:dd>Wrote an Automated User Acceptance Tests system for the software suite using Jython, Selenium, and Sikuli frameworks.</xhtml:dd>
+                  <xhtml:dd>Did trainings for other tester people, supported other testers. If all other testers did not find the issue, then I investigated
+                     the problem by myself. There were no situation when the issue was left not fixed.
+                  </xhtml:dd>
+                  <xhtml:dd>Over 1100 bugs found and reported within 2 years</xhtml:dd>
+               </xhtml:dl>
+            </xhtml:div>
+            <xhtml:div class="span4">
+               <xhtml:dl class="dl-horizontal">
+                  <xhtml:dt>Protocols</xhtml:dt>
+                  <xhtml:dd>
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Http">HTTP</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/Json">JSON</xhtml:a>,
+                     <xhtml:a href="http://en.wikipedia.org/wiki/SOAP">SOAP</xhtml:a>
+                  </xhtml:dd>
+                  <xhtml:dt>Tools</xhtml:dt>
+                  <xhtml:dd>
                      <xhtml:span>Jira</xhtml:span>,
-                     <xhtml:span>vim</xhtml:span>,
-                     <xhtml:span>Mac OS X</xhtml:span>
+                     <xhtml:a href="http://www.oracle.com/technetwork/database/features/plsql/index.html">SQL*Developer</xhtml:a>,
+                     <xhtml:a href="http://www.soapui.org/">SOAP UI</xhtml:a>
                   </xhtml:dd>
                </xhtml:dl>
             </xhtml:div>
@@ -400,27 +557,12 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
                </xhtml:dl>
             </xhtml:div>
          </xhtml:div>
-         <xhtml:h4 xmlns:xhtml="http://www.w3.org/1999/xhtml">Mathew &#8212; <span xmlns="" class="title">Founder and Chief Technology Officer, Foleeo Inc.</span></xhtml:h4>
-         <xhtml:blockquote xmlns:xhtml="http://www.w3.org/1999/xhtml">
-            <xhtml:p>&#8220;
-               
-               Ryann has both an excellent technical perspective and the drive to fight for the common user. He has a very wide understanding
-               of development's, web services', and online communities' concepts and finds the best way to accomplish the tasks at hand.
-               The caliber of his work is a rarity among his field and he pulls knowledge and services from the most applicable sources while
-               interfacing quickly, effectively, and concurrently with design, development, strategic, marketing, and executive teams.
-               &#8221;
-            </xhtml:p>
-         </xhtml:blockquote>
       </div>
       
       	
       <footer>
          				
          <p class="url">ilyakharlamov.com</p>
-         		
-         <p class="email hr"><script type="text/javascript">// 
-			function w(e){document.write(e);}w('ilya');w('kharlamov');w('&amp;#64;');w('gmail.c');w('om');
-			// </script>ilya.kharlamov@gmail.com</p>
          	
       </footer>
       
@@ -436,7 +578,6 @@ As you'll see here, I'm using some pseudo-selectors that will not work in old br
       	
       <p class="lastupdate">Last updated: 2nd July 2014. v14.702.2126</p>
       
-      	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       	<script type="text/javascript">
 	$(function onReady () {
 		$('abbr').click(function(e){
