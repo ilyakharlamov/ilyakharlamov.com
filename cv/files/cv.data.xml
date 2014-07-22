@@ -10,7 +10,7 @@
         <contribution>Developed high performance, low-latency JavaScript code</contribution>
         <contribution>Wrote a custom Java JPA library for automatic Oracle DDL management (table, index, views, functions, procedures, dblinks, constraints, sequences) that reduced manual db actions during upgrade/deployment by 95%</contribution>
         <contribution>Rewrote core code central to the application leading to 100-200% speed increase in processing multi-gigabyte XML files</contribution>
-        <contribution>Created a tool for DevOps team to automate deployment, monitoring, performance and stability of the production system in the cloud environment that greatly improved working efficiency of the DevOps</contribution>
+        <contribution>Created a tool for DevOps team to automate deployment, monitoring, performance and stability of the production system in the cloud environment that dramatically improved the software delivery pipeline</contribution>
         <contribution>Solved key web-UI performance issues and established efficient, maintainable patterns that are now used across the project</contribution>
         <contribution>Refactored the Business rules processing engine (Jboss Drools) to make it more reliable, scalable and faster to load</contribution>
         <contribution>Added unit &amp; integration tests to the previously not tested code</contribution>
