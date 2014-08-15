@@ -7,7 +7,10 @@
         <to>present</to>
         <description>The cloud software that enables customers to book print and online ads as well as manage conacts, contracts and customer relationships.</description>
         <role>Lead Developer</role>
-        <contribution>Developed high performance, low-latency JavaScript code</contribution>
+        <contribution>Communicating with management and customer, delivered $4M software development project on-time/on-budget by leading a small group of junior developers, and introducing project management best practices.</contribution>
+        <contribution>Created a Java Business Logic In-Memory/Event Sourcing/CQRS engine from scratch (achieved 100K TPS) on my own</contribution>
+        <contribution>Improved performance of a Java application and changed the way how we deploy the application. That slashed datacenter annual costs ~$200K and reduced deployment issues.</contribution>
+        <contribution>Developed high performance, low-latency JavaScript code that improved web service loading time by 70%. This improved the user perception, reduced the number of users that do not get the results within first seconds and just leave the page to virtually nil.</contribution>
         <contribution>Wrote a custom Java JPA library for automatic Oracle DDL management (table, index, views, functions, procedures, dblinks, constraints, sequences) that reduced manual db actions during upgrade/deployment by 95%</contribution>
         <contribution>Rewrote core code central to the application leading to 100-200% speed increase in processing multi-gigabyte XML files</contribution>
         <contribution>Created a tool for DevOps team to automate deployment, monitoring, performance and stability of the production system in the cloud environment that dramatically improved the software delivery pipeline</contribution>
@@ -16,7 +19,6 @@
         <contribution>Added unit &amp; integration tests to the previously not tested code</contribution>
         <contribution>Developed a new SQL/Reports/XSLT library that improves productivity of the report designers</contribution>
         <contribution>Designed two customer applications from the ground up, was the main responsible contact during implementation, and lead the installations successfull to production in time.</contribution>
-        <contribution>Coordinated the work of a small group of junior developers: Provided functional and technical vision to development team, Drove technical process improvement, maintained code quality and was making better choices for the technology.</contribution>
         <tools name="Languages">
             <tool link="http://www.ecmascript.org/">JavaScript</tool>
             <tool link="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</tool>
