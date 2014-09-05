@@ -1,1 +1,1 @@
-xsltproc -o ../index.html generate.xsl template.xhtml
+~/lib/libxslt/xsltproc/xsltproc -o ../index.xhtml generate.xsl template.xhtml

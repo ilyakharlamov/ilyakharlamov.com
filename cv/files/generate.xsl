@@ -5,7 +5,7 @@
     version="1.0">
     <xsl:param name="mode">xhtml</xsl:param>
     <xsl:param name="data.file">cv.data.xml</xsl:param>
-    <xsl:output method="html"/>
+    <xsl:output method="xml"/>
     <xsl:template match="/">
         <xsl:choose>
             <xsl:when test="$mode='xhtml'">
